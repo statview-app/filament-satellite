@@ -1,0 +1,30 @@
+{
+    "name": "statview/filament-satellite",
+    "description": "Filament package for Statview",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Statview\\FilamentSatellite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sebastiaan Kloos",
+            "email": "sebastiaan@statview.app"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^v10.0",
+        "statview/satellite": "^1.2.8",
+        "filament/filament": "^v3.0.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Statview\\FilamentSatellite\\FilamentSatelliteServiceProvider"
+            ]
+        }
+    }
+}
